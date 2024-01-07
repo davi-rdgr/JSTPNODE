@@ -13,6 +13,18 @@ let Tenis = {
     },
 };
 
+function abalon() {
+    return 2 + 2
+}
+let objeto = {
+    casa,
+    rua,
+}
+const obj = new objeto;
+console.log(obg(true, true))
+
+console.log(abalon())
+console.log(objeto)
 // hasOwnProperty = usa para saber se existe algo dentro de um objeto, array, API 
 // PropertyName in Tenis
 
@@ -24,4 +36,4 @@ if ((Tenis.hasOwnProperty("tamanho"))) {
     console.log('não tem tamanho')
 }
 
-console.log("tamanho" in Tenis)
+//console.log("tamanho" in Tenis)
