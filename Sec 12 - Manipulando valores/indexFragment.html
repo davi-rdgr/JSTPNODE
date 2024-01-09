@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>valores manipulando</h1>
+    <ul>
+    </ul>
+
+
+    <script>
+        const ul = document.querySelector("ul")
+        const fragment = document.createDocumentFragment()
+
+        const lanches = ["lanche1", "lanche2", "lanche3"]
+        lanches.forEach((element) => {
+            const li = document.querySelector("li")
+            li.textContent = element
+            fragment.append(li)
+        });
+        console.log(fragment)
+        ul.append(fragment)
+    </script>
+</body>
+
+</html>

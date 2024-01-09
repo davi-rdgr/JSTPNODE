@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Encontranto elementos</h1>
+        <p class="paragrafo">
+            1 Class = Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos qui nesciunt a odio
+            voluptates quam, corporis ipsa vitae! Aspernatur impedit officia facilis quaerat possimus, amet debitis
+            officiis ullam <strong>velit voluptatum</strong>.
+        </p>
+
+        <p class="paragrafo">
+            1 Class = Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos qui nesciunt a odio
+            voluptates quam, corporis ipsa vitae! Aspernatur impedit officia facilis quaerat possimus, amet debitis
+            officiis ullam <strong>velit voluptatum</strong>.
+        </p>
+    </div>
+
+    <script>
+
+        const strong = document.querySelector('strong')
+        const container = document.querySelector('.container')
+
+        //    console.log(container.children) //HTML collection
+        //    console.log(container.childNodes) // NodeList
+
+        // para criar um Array de verdade de um fake Array
+
+        const child = Array.from(container.children)
+        console.log(child)
+
+        child.forEach(element => {
+            console.log(element)
+        });
+
+    </script>
+</body>
+
+</html>

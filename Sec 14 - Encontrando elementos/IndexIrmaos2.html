@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Encontranto elementos</h1>
+        <p class="paragrafo">
+            1 Class = Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos qui nesciunt a odio
+            voluptates quam, corporis ipsa vitae! Aspernatur impedit officia facilis quaerat possimus, amet debitis
+            officiis ullam <strong>velit voluptatum</strong>.
+        </p>
+
+        <p class="paragrafo">
+            1 Class = Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos qui nesciunt a odio
+            voluptates quam, corporis ipsa vitae! Aspernatur impedit officia facilis quaerat possimus, amet debitis
+            officiis ullam <strong>velit voluptatum</strong>.
+        </p>
+    </div>
+
+    <script>
+
+        const h1 = document.querySelector('h1')
+        const p = document.querySelector('p')
+
+        //talvez possa usar isso na API de Pokémon um dia.
+        
+        console.log(h1.previousSibling)
+        console.log(h1.previousElementSibling)
+
+        console.log(p.previousSibling)
+        console.log(p.previousElementSibling)
+
+
+
+    </script>
+</body>
+
+</html>
